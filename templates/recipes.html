@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title%}
+    Recipe Finder
+{% endblock %}
+
+{% block content %}
+<h1>Recipe results for {{ ingredient }}</h1>
+
+<ul>
+ {% for hit in hits %}
+    <h3>{{ hit.recipe.label }}</h3>
+     {% for ingredient in hit.recipe.ingredients %}
+        <ul>{{ ingredient.text }}</ul>
+    {% endfor %}
+{% endfor %}
+ </ul>
+
+{% endblock %}
