@@ -1,8 +1,21 @@
 {% extends "base.html" %}
 {% block title%}
-    Home Page
+    Recipes
 {% endblock %}
 
 {% block content %}
     <h1>Welcome!</h1>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://images.squarespace-cdn.com/content/v1/53b839afe4b07ea978436183/1608506169128-S6KYNEV61LEP5MS1UIH4/traditional-food-around-the-world-Travlinmad.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://images.ctfassets.net/uexfe9h31g3m/6GR8WblU9suwVcIJdbw565/6454dac8b9d375238240334a655dc20d/grazing_board.jpg?w=768&h=512&fm=jpg&fit=thumb&q=90&fl=progressive" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://celebratingsweets.com/wp-content/uploads/2018/08/Healthy-Lunch-Ideas-featured.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+        </div>
 {% endblock %}
